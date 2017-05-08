@@ -1,0 +1,6 @@
+suprise.suprise:
+  path: /suprise
+  defaults:
+    _controller: '\Drupal\suprise\Controller\SupriseController::suprise'
+  requirements:
+    _permission: 'access content'
