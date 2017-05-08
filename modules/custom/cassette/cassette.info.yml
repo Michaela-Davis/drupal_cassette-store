@@ -1,0 +1,6 @@
+name: Cassette Module
+description: enables ajax
+package: Custom
+
+type: module
+core: 8.x
