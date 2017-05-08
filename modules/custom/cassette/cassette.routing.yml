@@ -1,6 +1,6 @@
-cassette:
-    path: /cassette
-    defaults:
-        _controller: Drupal\cassette\Controller\CassetteController::cassette
-    requirements:
-        _permission: 'access content'
+cassette.cassette:
+  path: /cassette
+  defaults:
+    _controller: '\Drupal\cassette\Controller\CassetteController::cassette'
+  requirements:
+    _permission: 'access content'
