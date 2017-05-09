@@ -1,5 +1,5 @@
 suprise.suprise:
-  path: /suprise
+  path: /node/12345
   defaults:
     _controller: '\Drupal\suprise\Controller\SupriseController::suprise'
   requirements:
