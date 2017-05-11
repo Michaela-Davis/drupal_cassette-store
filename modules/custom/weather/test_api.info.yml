@@ -1,0 +1,5 @@
+name: Api test
+type: module
+description: Tests output of api
+core: 8.x
+package: weather

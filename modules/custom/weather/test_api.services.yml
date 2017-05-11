@@ -1,0 +1,3 @@
+services:
+  test_api.api:
+    class: Drupal\weather\TestApi
