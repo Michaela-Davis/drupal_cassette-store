@@ -1,6 +1,6 @@
 suprise.suprise:
-  path: /node/12345
+  path: /glassdoor
   defaults:
-    _controller: '\Drupal\suprise\Controller\SupriseController::suprise'
+    _controller: '\Drupal\suprise\Controller\SupriseController::api'
   requirements:
     _permission: 'access content'
