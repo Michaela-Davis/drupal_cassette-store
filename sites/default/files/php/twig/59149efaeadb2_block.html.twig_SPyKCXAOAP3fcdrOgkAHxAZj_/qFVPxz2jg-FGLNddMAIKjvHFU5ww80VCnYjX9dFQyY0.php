@@ -1,7 +1,7 @@
 <?php
 
-/* @classy/block/block--search-form-block.html.twig */
-class __TwigTemplate_3f1b43b3817fe6b644b11f2517ed7110e0a19d4d1a72d64a42b366122f2f2ea1 extends Twig_Template
+/* block.html.twig */
+class __TwigTemplate_2b14f98ef4f9bb4b271ccc66dd0a76b118926783c53cb8003b4cd6f01807ce2a extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -16,14 +16,14 @@ class __TwigTemplate_3f1b43b3817fe6b644b11f2517ed7110e0a19d4d1a72d64a42b366122f2
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $tags = array("set" => 30, "if" => 38, "block" => 42);
-        $filters = array();
+        $tags = array("set" => 29, "if" => 37, "block" => 41);
+        $filters = array("clean_class" => 31);
         $functions = array();
 
         try {
             $this->env->getExtension('sandbox')->checkSecurity(
                 array('set', 'if', 'block'),
-                array(),
+                array('clean_class'),
                 array()
             );
         } catch (Twig_Sandbox_SecurityError $e) {
@@ -40,20 +40,22 @@ class __TwigTemplate_3f1b43b3817fe6b644b11f2517ed7110e0a19d4d1a72d64a42b366122f2
             throw $e;
         }
 
-        // line 30
-        $context["classes"] = array(0 => "block", 1 => "block-search", 2 => "container-inline");
-        // line 36
+        // line 29
+        $context["classes"] = array(0 => "block", 1 => ("block-" . \Drupal\Component\Utility\Html::getClass($this->getAttribute(        // line 31
+(isset($context["configuration"]) ? $context["configuration"] : null), "provider", array()))), 2 => ("block-" . \Drupal\Component\Utility\Html::getClass(        // line 32
+(isset($context["plugin_id"]) ? $context["plugin_id"] : null))));
+        // line 35
         echo "<div";
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["attributes"]) ? $context["attributes"] : null), "addClass", array(0 => (isset($context["classes"]) ? $context["classes"] : null)), "method"), "html", null, true));
         echo ">
   ";
-        // line 37
+        // line 36
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["title_prefix"]) ? $context["title_prefix"] : null), "html", null, true));
         echo "
   ";
-        // line 38
+        // line 37
         if ((isset($context["label"]) ? $context["label"] : null)) {
-            // line 39
+            // line 38
             echo "    <h2";
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["title_attributes"]) ? $context["title_attributes"] : null), "html", null, true));
             echo ">";
@@ -61,22 +63,22 @@ class __TwigTemplate_3f1b43b3817fe6b644b11f2517ed7110e0a19d4d1a72d64a42b366122f2
             echo "</h2>
   ";
         }
-        // line 41
+        // line 40
         echo "  ";
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["title_suffix"]) ? $context["title_suffix"] : null), "html", null, true));
         echo "
   ";
-        // line 42
+        // line 41
         $this->displayBlock('content', $context, $blocks);
-        // line 45
+        // line 44
         echo "</div>
 ";
     }
 
-    // line 42
+    // line 41
     public function block_content($context, array $blocks = array())
     {
-        // line 43
+        // line 42
         echo "    ";
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["content"]) ? $context["content"] : null), "html", null, true));
         echo "
@@ -85,7 +87,7 @@ class __TwigTemplate_3f1b43b3817fe6b644b11f2517ed7110e0a19d4d1a72d64a42b366122f2
 
     public function getTemplateName()
     {
-        return "@classy/block/block--search-form-block.html.twig";
+        return "block.html.twig";
     }
 
     public function isTraitable()
@@ -95,7 +97,7 @@ class __TwigTemplate_3f1b43b3817fe6b644b11f2517ed7110e0a19d4d1a72d64a42b366122f2
 
     public function getDebugInfo()
     {
-        return array (  80 => 43,  77 => 42,  72 => 45,  70 => 42,  65 => 41,  57 => 39,  55 => 38,  51 => 37,  46 => 36,  44 => 30,);
+        return array (  82 => 42,  79 => 41,  74 => 44,  72 => 41,  67 => 40,  59 => 38,  57 => 37,  53 => 36,  48 => 35,  46 => 32,  45 => 31,  44 => 29,);
     }
 
     public function getSource()
@@ -103,19 +105,19 @@ class __TwigTemplate_3f1b43b3817fe6b644b11f2517ed7110e0a19d4d1a72d64a42b366122f2
         return "{#
 /**
  * @file
- * Theme override for the search form block.
+ * Theme override to display a block.
  *
  * Available variables:
  * - plugin_id: The ID of the block implementation.
  * - label: The configured label of the block if visible.
- * - configuration: A list of the block's configuration values, including:
+ * - configuration: A list of the block's configuration values.
  *   - label: The configured label for the block.
  *   - label_display: The display settings for the label.
  *   - provider: The module or other provider that provided this block plugin.
  *   - Block plugin specific settings will also be stored here.
  * - content: The content of this block.
- * - attributes: A list HTML attributes populated by modules, intended to
- *   be added to the main container tag of this template. Includes:
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
  *   - id: A valid HTML ID and guaranteed unique.
  * - title_attributes: Same as attributes, except applied to the main title
  *   tag that appears in the template.
@@ -125,14 +127,13 @@ class __TwigTemplate_3f1b43b3817fe6b644b11f2517ed7110e0a19d4d1a72d64a42b366122f2
  *   displayed after the main title tag that appears in the template.
  *
  * @see template_preprocess_block()
- * @see search_preprocess_block()
  */
 #}
 {%
   set classes = [
     'block',
-    'block-search',
-    'container-inline',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
   ]
 %}
 <div{{ attributes.addClass(classes) }}>

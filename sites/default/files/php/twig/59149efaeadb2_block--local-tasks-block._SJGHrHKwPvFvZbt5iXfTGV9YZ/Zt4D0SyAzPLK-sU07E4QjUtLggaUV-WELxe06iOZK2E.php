@@ -1,28 +1,34 @@
 <?php
 
-/* region.html.twig */
-class __TwigTemplate_a3ec482b72170cf0e4eac5b38376f1d0d1ca3289bf1a14e3f7979726189b8cab extends Twig_Template
+/* core/themes/classy/templates/block/block--local-tasks-block.html.twig */
+class __TwigTemplate_2ad657781a5d530da418be50f26ef413be20f600f0b6868ee6ab257d13ca6a2f extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        $this->parent = false;
-
+        // line 1
+        $this->parent = $this->loadTemplate("block.html.twig", "core/themes/classy/templates/block/block--local-tasks-block.html.twig", 1);
         $this->blocks = array(
+            'content' => array($this, 'block_content'),
         );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "block.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $tags = array("set" => 16, "if" => 21);
-        $filters = array("clean_class" => 18);
+        $tags = array("if" => 9);
+        $filters = array("t" => 10);
         $functions = array();
 
         try {
             $this->env->getExtension('sandbox')->checkSecurity(
-                array('set', 'if'),
-                array('clean_class'),
+                array('if'),
+                array('t'),
                 array()
             );
         } catch (Twig_Sandbox_SecurityError $e) {
@@ -39,27 +45,31 @@ class __TwigTemplate_a3ec482b72170cf0e4eac5b38376f1d0d1ca3289bf1a14e3f7979726189
             throw $e;
         }
 
-        // line 16
-        $context["classes"] = array(0 => "region", 1 => ("region-" . \Drupal\Component\Utility\Html::getClass(        // line 18
-(isset($context["region"]) ? $context["region"] : null))));
-        // line 21
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
+
+    // line 8
+    public function block_content($context, array $blocks = array())
+    {
+        // line 9
+        echo "  ";
         if ((isset($context["content"]) ? $context["content"] : null)) {
-            // line 22
-            echo "  <div";
-            echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["attributes"]) ? $context["attributes"] : null), "addClass", array(0 => (isset($context["classes"]) ? $context["classes"] : null)), "method"), "html", null, true));
-            echo ">
-    ";
-            // line 23
+            // line 10
+            echo "    <nav class=\"tabs\" role=\"navigation\" aria-label=\"";
+            echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->renderVar(t("Tabs")));
+            echo "\">
+      ";
+            // line 11
             echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["content"]) ? $context["content"] : null), "html", null, true));
             echo "
-  </div>
-";
+    </nav>
+  ";
         }
     }
 
     public function getTemplateName()
     {
-        return "region.html.twig";
+        return "core/themes/classy/templates/block/block--local-tasks-block.html.twig";
     }
 
     public function isTraitable()
@@ -69,36 +79,25 @@ class __TwigTemplate_a3ec482b72170cf0e4eac5b38376f1d0d1ca3289bf1a14e3f7979726189
 
     public function getDebugInfo()
     {
-        return array (  53 => 23,  48 => 22,  46 => 21,  44 => 18,  43 => 16,);
+        return array (  63 => 11,  58 => 10,  55 => 9,  52 => 8,  11 => 1,);
     }
 
     public function getSource()
     {
-        return "{#
+        return "{% extends \"block.html.twig\" %}
+{#
 /**
  * @file
- * Theme override to display a region.
- *
- * Available variables:
- * - content: The content for this region, typically blocks.
- * - attributes: HTML attributes for the region <div>.
- * - region: The name of the region variable as defined in the theme's
- *   .info.yml file.
- *
- * @see template_preprocess_region()
+ * Theme override for tabs.
  */
 #}
-{%
-  set classes = [
-    'region',
-    'region-' ~ region|clean_class,
-  ]
-%}
-{% if content %}
-  <div{{ attributes.addClass(classes) }}>
-    {{ content }}
-  </div>
-{% endif %}
+{% block content %}
+  {% if content %}
+    <nav class=\"tabs\" role=\"navigation\" aria-label=\"{{ 'Tabs'|t }}\">
+      {{ content }}
+    </nav>
+  {% endif %}
+{% endblock %}
 ";
     }
 }
