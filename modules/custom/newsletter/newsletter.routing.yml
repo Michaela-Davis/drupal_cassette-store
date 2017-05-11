@@ -1,6 +1,7 @@
-newsletter.newsletter:
-  path: /newsletter/form
+newsletter_contribute:
+  path: '/newsletter/contribute'
   defaults:
-    _controller: '\Drupal\newsletter\Controller\NewsletterController::newsletter'
+    _form: '\Drupal\newsletter\Form\ContributeForm'
+    _title: 'Subscribe to Newsletter'
   requirements:
     _permission: 'access content'
