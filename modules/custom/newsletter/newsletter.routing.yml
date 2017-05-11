@@ -1,0 +1,6 @@
+newsletter.newsletter:
+  path: /newsletter/form
+  defaults:
+    _controller: '\Drupal\newsletter\Controller\NewsletterController::newsletter'
+  requirements:
+    _permission: 'access content'
