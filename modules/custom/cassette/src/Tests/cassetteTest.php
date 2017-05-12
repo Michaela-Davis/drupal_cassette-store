@@ -5,19 +5,22 @@
    * Unit Tests the cassette module
    * @group cassette
    */
-  class CassetteLevelTest extends UnitTestCase {
+  class CassetteTest extends UnitTestCase {
     /**
     * Modules to install.
     *
-    * @var int
+    * @var string
     */
+
     public static $modules = array('cassette');
     public $cassetteService;
+
     public function setUp(){
       $this->cassetteService = new \Drupal\cassette\TestCassette();
     }
+
     public function testFindResponse(){
-      $response = $this->cassetteService->findResponse(200);
-      $this->assertEquals(200, $response);
+      $response = $this->cassetteService->findResponse('hello');
+      $this->assertEquals(TRUE, $response);
     }
   }

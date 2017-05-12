@@ -5,7 +5,7 @@
  */
 namespace Drupal\cassette;
 /**
- * provide functions for leveling up.
+ * provide function for greeting.
  *
  * @package Drupal\cassette
  */
@@ -13,12 +13,14 @@ class TestCassette {
   /**
    * Check for a response
    *
-   * @return int
+   * @param $response
+   * @return string
    */
-  public function findResponse() {
-    if ($response != null) {
-      return 200;
+  public function findResponse($response) {
+    if ($response === "hello") {
+      return TRUE;
     } else {
-      return 100;
+      return FALSE;
     }
+  }
 }

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Drupal\cassette\Tests\CassetteTest" file="/Users/Guest/Desktop/Cassette-Store-/modules/custom/cassette/src/Tests/cassetteTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.001997">
+    <testcase name="testFindResponse" class="Drupal\cassette\Tests\CassetteTest" file="/Users/Guest/Desktop/Cassette-Store-/modules/custom/cassette/src/Tests/cassetteTest.php" line="22" assertions="1" time="0.001997"/>
+  </testsuite>
+</testsuites>

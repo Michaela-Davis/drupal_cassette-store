@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Drupal\KernelTests\KernelTestBaseTest" file="/Users/Guest/Desktop/Cassette-Store-/core/tests/Drupal/KernelTests/KernelTestBaseTest.php" tests="11" assertions="64" failures="0" errors="0" time="6.264960">
+    <testcase name="testSetUpBeforeClass" class="Drupal\KernelTests\KernelTestBaseTest" file="/Users/Guest/Desktop/Cassette-Store-/core/tests/Drupal/KernelTests/KernelTestBaseTest.php" line="19" assertions="3" time="0.397686"/>
+    <testcase name="testBootEnvironment" class="Drupal\KernelTests\KernelTestBaseTest" file="/Users/Guest/Desktop/Cassette-Store-/core/tests/Drupal/KernelTests/KernelTestBaseTest.php" line="27" assertions="5" time="0.532521"/>
+    <testcase name="testGetDatabaseConnectionInfoWithOutManualSetDbUrl" class="Drupal\KernelTests\KernelTestBaseTest" file="/Users/Guest/Desktop/Cassette-Store-/core/tests/Drupal/KernelTests/KernelTestBaseTest.php" line="50" assertions="3" time="0.395531"/>
+    <testcase name="testSetUp" class="Drupal\KernelTests\KernelTestBaseTest" file="/Users/Guest/Desktop/Cassette-Store-/core/tests/Drupal/KernelTests/KernelTestBaseTest.php" line="58" assertions="11" time="0.675306"/>
+    <testcase name="testSetUpDoesNotLeak" class="Drupal\KernelTests\KernelTestBaseTest" file="/Users/Guest/Desktop/Cassette-Store-/core/tests/Drupal/KernelTests/KernelTestBaseTest.php" line="98" assertions="4" time="0.374730"/>
+    <testcase name="testRegister" class="Drupal\KernelTests\KernelTestBaseTest" file="/Users/Guest/Desktop/Cassette-Store-/core/tests/Drupal/KernelTests/KernelTestBaseTest.php" line="109" assertions="13" time="0.520170"/>
+    <testcase name="testCompiledContainer" class="Drupal\KernelTests\KernelTestBaseTest" file="/Users/Guest/Desktop/Cassette-Store-/core/tests/Drupal/KernelTests/KernelTestBaseTest.php" line="144" assertions="3" time="0.844360"/>
+    <testcase name="testCompiledContainerIsDestructed" class="Drupal\KernelTests\KernelTestBaseTest" file="/Users/Guest/Desktop/Cassette-Store-/core/tests/Drupal/KernelTests/KernelTestBaseTest.php" line="155" assertions="3" time="0.795236"/>
+    <testcase name="testRender" class="Drupal\KernelTests\KernelTestBaseTest" file="/Users/Guest/Desktop/Cassette-Store-/core/tests/Drupal/KernelTests/KernelTestBaseTest.php" line="163" assertions="9" time="0.628087"/>
+    <testcase name="testRenderWithTheme" class="Drupal\KernelTests\KernelTestBaseTest" file="/Users/Guest/Desktop/Cassette-Store-/core/tests/Drupal/KernelTests/KernelTestBaseTest.php" line="191" assertions="6" time="0.644655"/>
+    <testcase name="testFileDefaultScheme" class="Drupal\KernelTests\KernelTestBaseTest" file="/Users/Guest/Desktop/Cassette-Store-/core/tests/Drupal/KernelTests/KernelTestBaseTest.php" line="211" assertions="4" time="0.456678"/>
+  </testsuite>
+</testsuites>
