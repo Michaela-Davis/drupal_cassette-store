@@ -1,0 +1,14 @@
+body,
+h1,
+h2,
+a {
+  font-family: 'Monoton', cursive;
+}
+
+.link {
+  color: #e428bd;
+}
+
+a, .link {
+    color: #008080;
+}
