@@ -2,7 +2,7 @@
   namespace Drupal\cassette\Tests;
   use Drupal\Tests\UnitTestCase;
   /**
-   * Unit Tests the cassette module
+   * Unit Tests the cassette module.
    * @group cassette
    */
   class CassetteTest extends UnitTestCase {
