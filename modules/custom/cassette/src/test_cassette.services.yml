@@ -1,0 +1,3 @@
+services:
+  test_cassette.cassettes:
+    class: Drupal\test_example\TestCassette
