@@ -2,6 +2,7 @@
 
 #### By _**Sarah Leahy and Michaela Davis**_   &nbsp; 5.12.17
 
+# [Visit the live site](http://dev-blast-from-the-past.pantheonsite.io/)
 
 ## Description
 
@@ -42,6 +43,12 @@ cd drupal_cassette-store
 
 * Visit Blast from the Past at [http://localhost:8888](http://localhost:8888).
 * Use the username `admin` and password `admin` to login to the Blast from the Past site
+
+## Technologies used
+* Drupal 8
+* MAMP 4
+* Glassdoor API - go to /suprise to see the results
+* Weather Underground API - go to /weather to see the results.
 
 
 ### License
